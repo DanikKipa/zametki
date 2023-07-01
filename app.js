@@ -26,7 +26,7 @@ const notes = [{
 function render(){
     listElement.innerHTML = ''
     if(notes.length === 0){
-        innerHtml = <p>Список пуст</p>
+         listElement.innerHtml = '<p>Список пуст</p>'
     }
     for(let i = 0; i < notes.length ; i++){
     listElement.insertAdjacentHTML('beforeend', getNoteTemplate(notes[i],i))
